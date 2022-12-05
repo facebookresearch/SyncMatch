@@ -1,0 +1,15 @@
+name: GenericAligner
+
+baseline:
+    feature: rootsift
+    aligner: cpa_ransac
+    distance: euclidean
+refinement:
+  num_steps: 2
+  alpha: 10.0
+alignment:
+  algorithm: cpa_ransac
+  scores: ratio_test
+  ransac:
+    schedule: [[5, 512], [5, 1024]]
+    threshold: 0.05

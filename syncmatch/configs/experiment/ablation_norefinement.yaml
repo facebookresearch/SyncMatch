@@ -1,0 +1,12 @@
+# @package _global_
+model:
+  refinement:
+    num_steps: 1
+train:
+  eval_step: 5000
+  max_steps: 100000
+experiment:
+  group: Ablation
+  name: ${experiment.group}_NoRefinement
+  timestamp: ""
+  rationale: Ablate correspondence refinement 

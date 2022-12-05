@@ -1,0 +1,12 @@
+# @package _global_
+experiment:
+  group: ScanNetSmall
+  name: ${experiment.group}_${dataset.name}_nViews${dataset.num_views}_ViewSpacing${dataset.view_spacing}
+  timestamp: ""
+dataset:
+  name: ScanNet_Small
+  num_views: 4
+  view_spacing: 5
+train:
+  eval_step: 5000
+  max_steps: 100000

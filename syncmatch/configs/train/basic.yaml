@@ -1,0 +1,14 @@
+max_steps: 100000
+checkpoint_step: 10000
+eval_step: 5000
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 0.001
+  weight_decay: 0.001
+scheduler:
+  _target_: pl_bolts.optimizers.lr_scheduler.LinearWarmupCosineAnnealingLR
+  max_epochs: ${train.max_steps}
+  warmup_epochs: 5000
+  warmup_start_lr: 1e-4
+  eta_min: 1e-6
+    

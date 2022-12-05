@@ -1,0 +1,9 @@
+name: ETH_Video
+split: training
+root: /nfs/turbo/justincj-turbo/shared_datasets/ETH_RGBD
+num_views: 4
+view_spacing: 5
+overfit: False
+batch_size: 8
+img_dim: 240
+fill_depth: True

@@ -1,0 +1,8 @@
+# @package _global_
+experiment:
+  group: ScanNet
+  name: ${experiment.group}_${dataset.name}_nViews${dataset.num_views}_confMin${model.confidence_min}
+  timestamp: ""
+train:
+  eval_step: 5000
+  max_steps: 100000

@@ -1,0 +1,12 @@
+# @package _global_
+model:
+  alignment:
+    algorithm: cpa
+train:
+  eval_step: 5000
+  max_steps: 100000
+experiment:
+  group: Ablation
+  name: ${experiment.group}_NoRANSAC
+  timestamp: ""
+  rationale: Ablate the CPA RANSAC -- Apply alignment on the full correspondence set

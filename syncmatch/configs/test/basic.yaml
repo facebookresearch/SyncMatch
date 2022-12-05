@@ -1,0 +1,26 @@
+checkpoint:
+  path: ""
+  name: ""
+  time: ""
+  epoch: 0
+  step: -1
+split: test
+visualize_test: False
+model_cfg:
+  light_first_run: False
+  sync_algorithm: all
+  confidence_min: 0.2
+  refinement:
+    num_steps: 2
+    alpha: 10.0
+  correspondence:
+    sampling: all
+    num_corr: 500
+    bidirectional: False
+  alignment:
+    algorithm: cpa_ransac
+    scores: ratio_test
+    ransac:
+      schedule: [[5, 512], [5, 1024]]
+      threshold: 0.05
+      diversity: 0

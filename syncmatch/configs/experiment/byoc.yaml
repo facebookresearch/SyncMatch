@@ -1,0 +1,19 @@
+# @package _global_
+dataset:
+  num_views: 2
+model:
+  confidence_min: 0.0
+  loss:
+    weights:
+      pairwise: 1.0
+      sync: 0.0
+  refinement:
+    num_steps: 1
+    alpha: 1.0
+  correspondence:
+    sampling: all
+    num_corr: 500
+experiment:
+  group: BYOC++
+  name: ${experiment.group}
+  timestamp: ""

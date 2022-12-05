@@ -1,0 +1,8 @@
+name: ScanNet_Small
+root: /nfs/turbo/justincj-turbo/shared_datasets/ScanNet/v2_splits
+overfit: False
+batch_size: 16
+num_views: 4
+view_spacing: 5
+img_dim: 240
+fill_depth: True

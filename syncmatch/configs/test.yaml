@@ -1,0 +1,14 @@
+system:
+  random_seed: 8
+  detect_anomaly: False
+paths:
+  experiment_root: outputs
+  html_visual_dir: ${paths.experiment_root}/syncmatch_public_html
+  tensorboard_dir: ${paths.experiment_root}/syncmatch_tensor_logs
+  experiments_dir: ${paths.experiment_root}/syncmatch_checkpoints
+
+defaults:
+  - model: syncmatch
+  - dataset: scannet_testpairs
+  - test: basic
+  - _self_

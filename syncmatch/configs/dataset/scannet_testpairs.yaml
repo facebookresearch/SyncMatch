@@ -1,0 +1,5 @@
+name: ScanNet_TestPairs
+root: /nfs/turbo/justincj-turbo/mbanani/scannet_test_1500
+num_views: 2
+overfit: False
+batch_size: 8

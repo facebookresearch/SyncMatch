@@ -1,0 +1,11 @@
+# @package _global_
+model:
+  confidence_min: 0.0
+train:
+  eval_step: 5000
+  max_steps: 100000
+experiment:
+  group: Ablation
+  name: ${experiment.group}_NoConfidenceThreshold
+  timestamp: ""
+  rationale: Set confidence threshold to 0  

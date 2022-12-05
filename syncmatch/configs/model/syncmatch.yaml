@@ -1,0 +1,33 @@
+name: SyncMatch
+sync_algorithm: all
+confidence_min: 0.5
+light_first_run: False
+use_gt_depth: True
+use_gt_Rt: False
+
+loss:
+  confidence_weighted: False
+  detached_loss: False
+  robust_loss: 0.0
+  type: rmse
+  weights:
+    pairwise: 1.0
+    sync: 1.0
+features:
+  dim: 128
+  zero_mean: True
+  backbone: ResNet18
+  downsampling_factor: 4
+refinement:
+  num_steps: 2
+  alpha: 1.0
+correspondence:
+  sampling: all
+  num_corr: 500
+  bidirectional: False
+alignment:
+  algorithm: cpa_ransac
+  scores: ratio_test
+  ransac:
+    schedule: [[5,128]]
+    threshold: 0.05

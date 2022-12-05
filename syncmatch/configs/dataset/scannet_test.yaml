@@ -1,0 +1,8 @@
+name: ScanNet
+root: /nfs/turbo/justincj-turbo/shared_datasets/ScanNet/v2_splits
+overfit: False
+batch_size: 16
+num_views: 2
+view_spacing: 20
+img_dim: 480
+fill_depth: False

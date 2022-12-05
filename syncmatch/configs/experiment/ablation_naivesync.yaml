@@ -1,0 +1,11 @@
+# @package _global_
+model:
+  sync_algorithm: adjacent 
+train:
+  eval_step: 5000
+  max_steps: 100000
+experiment:
+  group: Ablation
+  name: ${experiment.group}_NaiveSync
+  timestamp: ""
+  rationale: Ablate Synchornization -- simply chain the predictions 
